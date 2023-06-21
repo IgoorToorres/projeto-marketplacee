@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blusa1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!--div global do cabeçalho-->
+        <nav class="cabecalho">
+
+            <a href="index.html"><img src="imagens/logo.png" alt="logotipo da marca (imagem ilustrativa)"></a>
+            <!--lista com itens do menu-->
+            <div class="mobile_menu">
+                <div></div>
+            </div>
+            <ul class="nav_list">
+                <li><a href="#" class="links">Masculino</a></li>
+                <li><a href="#" class="links">Feminino</a></li>
+                <li><a href="#" class="links">lançamentos</a></li>
+                <li><a href="#" class="links">Ofertas</a></li>
+            </ul>
+            <!--campo de pesquisa-->
+            <div class="pesquisa">
+                <input type="text" placeholder="Procurar...">
+                <img src="imagens/icones/lupa.png" alt="imagem de lupa para simbolizar aba de pesquisa">
+            </div>
+
+            <div class="campo_login_cadastro">
+                <a href="#" class="login" id="abrir_modal">Login</a>
+                <a href="#" class="cadastro abrir_modal2">Registre-se</a>
+            </div>
+
+            <!--campo do carrinho-->
+            <div class="carrinho">
+                <img src="imagens/icones/carrinho.png" alt="imagem de um carrinho para simbolizar aba de itens selecionados para compra">
+            </div>
+
+        </nav>
+
+        <div id="fade" class="hide fade"></div>
+        <div id="modal" class="hide">
+            <button id="fechar_modal" class="fechar_aba">X</button>
+            <div class="container_formulario">
+                <h2>Login</h2>
+                <form action="#" method="post">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" name="usuario" placeholder="Usuário" required>
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" placeholder="Senha" required>
+                    <button type="submit">Login</button>
+                </form>
+                <div class="cadastrar-se">
+                  <p>Não tem uma conta? <a href="#" class="trocar_modal">Cadastrar-se</a></p>
+                </div>
+              </div>
+        </div>
+
+        <div id="fade2" class="hide fade"></div>
+        <div id="modal2" class="hide">
+            <button id="fechar_modal2" class="fechar_aba">X</button>
+            <h2>Registre-se</h2>
+            <form class="formulario_cadastro">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Nome">
+              
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" id="sobrenome" name="sobrenome" required placeholder="Sobrenome">
+              
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="exemplo@gmail.com">
+              
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required placeholder="(xx) xxxxx-xxxx">
+              
+                <label for="data-nascimento">Data de Nascimento:</label>
+                <input type="date" id="data-nascimento" name="data-nascimento" required>
+              
+                <button type="submit">Cadastrar</button>
+              </form>
+              
+            <p>Já possui um login? <a href="#" class="trocar_modal2">Login</a></p>
+        </div>
+
+    </header>
+    <main>
+        <section class="campo_do_produto">
+            <div class="campo_imagem_produto">
+                <div>
+                    <img class="imagem_produto" src="imagens/produtos/camisa_frente.png" alt="">
+                </div>
+                <div class="opcao_cor">
+                    <img src="imagens/produtos/CAMISETA ASSC LOGO (3).webp" alt="">
+                </div>
+                <div class="opcao_cor">
+                    <img src="imagens/produtos/CAMISETA ASSC TWISTER (2).webp" alt="">
+                </div>
+            </div>
+            <div class="opcoes_produto">
+                <p>Cor: </p>
+                <button class="cor_produto " id="cor1"></button>
+                <button class="cor_produto " id="cor2"></button>
+                <div class="tamanho_produto">
+                    <p>Tamanho: </p>
+                    <button class="tamanhos ">PP</button>
+                    <button class="tamanhos ">P</button>
+                    <button class="tamanhos ">M</button>
+                    <button class="tamanhos ">G</button>
+                    <button class="tamanhos ">GG</button>
+                </div>
+                <table>
+                    
+                </table>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="rodape">
+            <p>Site feito por <a href="https://github.com/IgoorToorres" target="_blank">igor Torres</a> e <a href="https://github.com/PedroBorgees">Pedro Augusto</a></p>
+            <p id="descricao">As imagens contidas neste site <br> são apenas ilustrativas e com fins educativos.</p>
+        </div>
+    </footer>
+    <script src="script2.js"></script>
+</body>
+</html>

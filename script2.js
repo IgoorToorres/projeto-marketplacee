@@ -1,23 +1,3 @@
-// efeito carrosel
-let count = 1;
-document.getElementById("radio1").checked=true;
-
-setInterval( function(){
-    nextImage();
-}, 7000)
-
-function nextImage(){
-    count++;
-    if(count>3){
-        count = 1;
-    }
-    document.getElementById("radio"+count).checked=true;
-}
-//fim efeito carrosel
-
-
-//abrindo tela modal de login
-
 const abrirModal = document.querySelector("#abrir_modal");
 const fecharModal = document.querySelector("#fechar_modal");
 const fade = document.querySelector("#fade");
@@ -46,6 +26,3 @@ const toggleModal2 = () => {
 [abrirModal2, fehcarModal2].forEach((el) => {
     el.addEventListener("click", () => toggleModal2());
 });
-
-
-
