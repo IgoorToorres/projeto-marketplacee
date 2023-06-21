@@ -783,9 +783,6 @@ slide.img{
     .slider{
         height: 700px;
     }
-    .slide > img{
-
-    }
 }
 
 @media ((min-width: 1025px) and (max-width: 1198px)){
