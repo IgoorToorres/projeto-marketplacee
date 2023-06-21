@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marketplace</title>
+    <link rel="shortcut icon" href="icone.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!--div global do cabeçalho-->
+        <nav class="cabecalho">
+
+            <a href="index.html"><img src="imagens/logo.png" alt="logotipo da marca (imagem ilustrativa)"></a>
+            <!--lista com itens do menu-->
+            <div class="mobile_menu">
+                <div></div>
+            </div>
+            <ul class="nav_list">
+                <li><a href="#" class="links">Masculino</a></li>
+                <li><a href="#" class="links">Feminino</a></li>
+                <li><a href="#" class="links">lançamentos</a></li>
+                <li><a href="#" class="links">Ofertas</a></li>
+            </ul>
+            <!--campo de pesquisa-->
+            <div class="pesquisa">
+                <input type="text" placeholder="Procurar...">
+                <img src="imagens/icones/lupa.png" alt="imagem de lupa para simbolizar aba de pesquisa">
+            </div>
+
+            <div class="campo_login_cadastro">
+                <a href="#" class="login" id="abrir_modal">Login</a>
+                <a href="#" class="cadastro abrir_modal2">Registre-se</a>
+            </div>
+
+            <!--campo do carrinho-->
+            <div class="carrinho">
+                <img src="imagens/icones/carrinho.png" alt="imagem de um carrinho para simbolizar aba de itens selecionados para compra">
+            </div>
+
+        </nav>
+
+        <div id="fade" class="hide fade"></div>
+        <div id="modal" class="hide">
+            <button id="fechar_modal" class="fechar_aba">X</button>
+            <div class="container_formulario">
+                <h2>Login</h2>
+                <form action="#" method="post">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" name="usuario" placeholder="Usuário" required>
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" placeholder="Senha" required>
+                    <button type="submit">Login</button>
+                </form>
+                <div class="cadastrar-se">
+                  <p>Não tem uma conta? <a href="#" class="trocar_modal">Cadastrar-se</a></p>
+                </div>
+              </div>
+        </div>
+
+        <div id="fade2" class="hide fade"></div>
+        <div id="modal2" class="hide">
+            <button id="fechar_modal2" class="fechar_aba">X</button>
+            <h2>Registre-se</h2>
+            <form class="formulario_cadastro">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Nome">
+              
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" id="sobrenome" name="sobrenome" required placeholder="Sobrenome">
+              
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="exemplo@gmail.com">
+              
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required placeholder="(xx) xxxxx-xxxx">
+              
+                <label for="data-nascimento">Data de Nascimento:</label>
+                <input type="date" id="data-nascimento" name="data-nascimento" required>
+              
+                <button type="submit">Cadastrar</button>
+              </form>
+              
+            <p>Já possui um login? <a href="#" class="trocar_modal2">Login</a></p>
+        </div>
+
+    </header>
+    <main>
+        <div class="slider_mobile">
+            <img src="imagens/wallpapers/wallpaper mobile.jpeg" alt="" class="img_mobile1">
+            <button class="butao_imagem_mobile"><img src="imagens/icones/seta_mobile.png" alt=""></button>
+            <button class="butao_imagem_mobile2"><img src="imagens/icones/seta_mobile.png" alt=""></button>
+        </div>
+        <div class="slider">
+
+            <div class="slides">
+                <!--radio buttons-->
+                <input type="radio" name="radio_btn" id="radio1">
+                <input type="radio" name="radio_btn" id="radio2">
+                <input type="radio" name="radio_btn" id="radio3">
+                <!--fim radio buttons-->
+
+                <!--imagens-->
+                <div class="slide primeira">
+                    <img src="imagens/wallpapers/imagem_principal_1.webp" alt="">
+                </div>
+                <div class="slide">
+                    <img src="imagens/wallpapers/imagem_principal_2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="imagens/wallpapers/imagem_principal_3.webp" alt="">
+                </div>
+                <!--fim imagens-->
+
+                <!--navegacao automatica-->
+                <div class="navegacao_automatica">
+                    <div class="auto_btn1"></div>
+                    <div class="auto_btn2"></div>
+                    <div class="auto_btn3"></div>
+                </div>
+            </div>
+            <!--navegacao manual-->
+            <div class="navegacao_manual">
+                <label for="radio1" class="manual_btn"></label>
+                <label for="radio2" class="manual_btn"></label>
+                <label for="radio3" class="manual_btn"></label>
+            </div>
+            
+        </div>
+        <div class="titulo">
+            <div class="linha"></div>
+            <div class="texto_titulo"><h2>Ultimos Lançamentos</h2></div>
+        </div>
+        <div class="container_catalogo">
+
+            
+            <div class="catalogo">
+                <div class="itens">
+                    <div class="produto b1">
+                        <div class="oferta"><p>-25%</p></div>
+                    </div>
+                    <p>CAMISETA ASSC SPIDER</p>
+                    <p class="valor_produto_antes_desconto"><s>R$280,00</s></p>
+                    <p class="valor_produto_desconto">R$238,00</p>
+                </div>
+
+                <div class="itens">
+                    <div class="produto b2"></div>
+                    <p>CAMISETA PALACE HESH MIT TEE</p>
+                    <p class="valor_produto">R$280,00</p>
+                </div>
+
+                <div class="itens">
+                    <div class="produto b3"></div>
+                    <p>CAMISETA ASSC LOGO</p>
+                    <p class="valor_produto">R$280,00</p>
+                </div>
+
+                <div class="itens">
+                    <div class="produto b4">
+                        <div class="oferta"><p>-25%</p></div>
+                    </div>
+                    <p>CAMISETA OFF WHITE MONALISA</p>
+                    <p class="valor_produto_antes_desconto"><s>R$280,00</s></p>
+                    <p class="valor_produto_desconto">R$238,00</p>
+                </div>
+
+                <div class="itens">
+                    <div class="produto b5">
+                        <div class="oferta"><p>-50%</p></div>
+                    </div>
+                    <p>CAMISETA ASSC TWISTER</p>
+                    <p class="valor_produto_antes_desconto"><s>R$280,00</s></p>
+                    <p class="valor_produto_desconto">R$250,00</p>
+                </div>
+
+                <div class="itens">
+                    <div class="produto b6"></div>
+                    <p>CAMISETA NIKE X RODMAN 90'S VINTAGE PINK</p>
+                    <p class="valor_produto">R$280,00</p>
+                </div>
+
+                <div class="itens">
+                    <div class="produto b7">
+                        <div class="oferta"><p>-50%</p></div>
+                    </div>
+                    <p>CAMISETA VLONE POP SMOKE</p>
+                    <p class="valor_produto_antes_desconto"><s>R$280,00</s></p>
+                    <p class="valor_produto_desconto">R$140,00</p>
+                </div>
+
+                <div class="itens">
+                    <div class="produto b8"></div>
+                    <p>CAMISETA ASTROWORLD WISH</p>
+                    <p class="valor_produto">R$280,00</p>
+                </div>
+
+                <div class="itens">
+                    <div class="produto b9"></div>
+                    <p>CAMISETA ASTROWORLD TOUR</p>
+                    <p class="valor_produto">R$280,00</p>
+                </div>
+
+                <div class="itens">
+                    <div class="produto b10"></div>
+                    <p>CAMISETA CACTUS JACK X MC DONALD'S SESAME</p>
+                    <p class="valor_produto">R$280,00</p>
+                </div>
+
+                <div class="itens">
+                    <div class="produto b11"></div>
+                    <p>CAMISETA VLONE X RODMAN</p>
+                    <p class="valor_produto">R$280,00</p>
+                </div>
+
+                <div class="itens">
+                    <div class="produto b12">
+                        <div class="oferta"><p>-25%</p></div>
+                    </div>
+                    <p>CAMISETA VLONE x YOUNGBOY NBA REAPER'S </p>
+                    <p class="valor_produto_antes_desconto"><s>R$280,00</s></p>
+                    <p class="valor_produto_desconto">R$238,00</p>
+                </div>
+
+
+            </div>
+        </div>
+       
+    </main>
+    <footer>
+        <div class="rodape">
+            <p>Site feito por <a href="https://github.com/IgoorToorres" target="_blank">igor Torres</a> e <a href="https://github.com/PedroBorgees">Pedro Augusto</a></p>
+            <p id="descricao">As imagens contidas neste site <br> são apenas ilustrativas e com fins educativos.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
