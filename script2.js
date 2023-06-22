@@ -26,3 +26,45 @@ const toggleModal2 = () => {
 [abrirModal2, fehcarModal2].forEach((el) => {
     el.addEventListener("click", () => toggleModal2());
 });
+
+
+//butao de adicionar mais roupas
+
+const btnAddBlusa = document.querySelector("#add_blusa");
+const btnRemoverBlusa = document.querySelector("#remover_blusa");
+let qtnBlusas = document.querySelector("#total");
+let valorFinal = document.querySelector("#quantidade_final");
+let preco = 268;
+let valor = 1;
+
+
+
+btnAddBlusa.addEventListener('click', () => {
+    if(valor <= 9){
+        valor++;
+        qtnBlusas.placeholder = valor;
+        valorFinal.innerHTML = preco * valor + ",00";
+    }
+});
+
+btnRemoverBlusa.addEventListener('click', () => {
+    if(valor >= 1){
+        valor--;
+        qtnBlusas.placeholder = valor;
+        if(valor > 1){
+            valorFinal.innerHTML = preco * valor + ",00";
+        }else{
+            valorFinal.innerHTML = preco + ",00";
+        }
+    }
+});
+
+
+
+
+
+
+
+
+
+

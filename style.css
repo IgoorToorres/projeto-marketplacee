@@ -500,6 +500,11 @@ slide.img{
     justify-content: center;
 }
 
+.link_compra{
+    text-decoration: none;
+    color: black;
+}
+
 .oferta{
     width: 50px;
     height: 50px;
@@ -534,6 +539,7 @@ slide.img{
     position: relative;
     top: 10px;
 }
+
 
 .valor_produto{
     font-size: 1.5em;
@@ -643,6 +649,7 @@ slide.img{
 .imagem_produto{
     height: 600px;
     width: 600px;
+    border: 1px solid rgba(0, 0, 0, 0.200);;
 }
 
 .imagens_produto{
@@ -653,7 +660,6 @@ slide.img{
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: .1s ease-in-out;
     opacity: 60%;
 }
 
@@ -664,16 +670,16 @@ slide.img{
 
 .imagens_produto:hover{
     cursor: pointer;
-    border: 2px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.200);
     opacity: 100%;
 }
 
 
 
 .opcoes_produto{
-    height: 750px;
+    height: 780px;
     width: 700px;
-    border: 2px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.200);
     padding: 50px;
     font-size: 1.5em;
 }
@@ -716,9 +722,11 @@ slide.img{
 
 #cor1{
     background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.200);;
 }
 #cor2{
     background-color: black;
+    border: 1px solid rgba(0, 0, 0, 0.200);;
 }
 
 .tamanhos{
@@ -730,6 +738,7 @@ slide.img{
     animation-play-state: paused;
     animation: none;
     background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.200);
 }
 
 .tamanhos:hover,
@@ -766,11 +775,11 @@ input[type=number]::-webkit-outer-spin-button {
 #total{
     height:50px;
     padding:1%;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 1px solid rgba(0, 0, 0, 0.200);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.200);
     background-color: white;
-    border-left: 0px solid black;
-    border-right: 0px solid black;
+    border-left: 0px solid rgba(0, 0, 0, 0.200);
+    border-right: 0px solid rgba(0, 0, 0, 0.200);
     padding-left:2%;
     padding-right:2%;
     outline:none;
@@ -783,9 +792,9 @@ input[type=number]::-webkit-outer-spin-button {
    width: 30px;
    height: 50px;
    border-left: 0;
-   border-bottom: 1px solid black;
-   border-right: 1px solid black;
-   border-top: 1px solid black;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.200);;
+   border-right: 1px solid rgba(0, 0, 0, 0.200);
+   border-top: 1px solid rgba(0, 0, 0, 0.200);
    font-weight: bolder;
    background-color: transparent;
    transition: .2s ease-in-out;
@@ -794,10 +803,10 @@ input[type=number]::-webkit-outer-spin-button {
 #remover_blusa{
     width: 30px;
     height: 50px;
-    border-left: 1px solid black;
-    border-bottom: 1px solid black;
+    border-left: 1px solid rgba(0, 0, 0, 0.200);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.200);
     border-right: 0;
-    border-top: 1px solid black;
+    border-top: 1px solid rgba(0, 0, 0, 0.200);
     font-weight: bolder;
     background-color: transparent;
     transition: .2s ease-in-out;
@@ -829,15 +838,15 @@ input[type=number]::-webkit-outer-spin-button {
 
 #preco_final{
     margin-left: 10px;
-    font-size: 1.2em;
-
+    font-size: 1.4em;
+    font-weight: bolder;
 }
 
 .comprar{
     background-color: #38813c;
     color: #fff;
     padding: 10px 20px;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.200);
     font-size: 16px;
     text-decoration: none;
     text-align: center;
@@ -845,12 +854,55 @@ input[type=number]::-webkit-outer-spin-button {
     transition: background-color 0.3s ease;
     width: 180px;
     height: 50px;
+    letter-spacing: 1px;
+    font-size: 0.8em;
+    font-weight: bolder;
 }
 
 .comprar:hover{
     background-color: #45a049;
 }
 
+#texto_frete{
+    margin-top: 20px;
+}
+
+.frete{
+    display: flex;
+    margin-top: 10px;
+}
+
+
+#campo_frete{
+    width: 150px;
+    height: 50px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.200);
+    background-color: transparent;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    font-size: 0.6em;
+}
+
+
+
+.calcular > button{
+    padding: 5px;
+    width: 120px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.200);
+    font-size: 0.8em;
+    letter-spacing: 1px;
+    font-weight: bolder;
+    margin-left: 5px;
+}
+
+.calcular > button:hover{
+    cursor: pointer;
+}
 
 
 
