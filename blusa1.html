@@ -91,10 +91,10 @@
                 <div>
                     <img class="imagem_produto" src="imagens/produtos/camisa_frente.png" alt="">
                 </div>
-                <div class="opcao_cor">
+                <div class="imagens_produto">
                     <img src="imagens/produtos/CAMISETA ASSC LOGO (3).webp" alt="">
                 </div>
-                <div class="opcao_cor">
+                <div class="imagens_produto">
                     <img src="imagens/produtos/CAMISETA ASSC TWISTER (2).webp" alt="">
                 </div>
             </div>
@@ -111,8 +111,66 @@
                     <button class="tamanhos ">GG</button>
                 </div>
                 <table>
-                    
+                    <tr>
+                        <th rowspan="8" width="80px">medidas</th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">Tamanhos</th>
+                        <th>Torax</th>
+                        <th>Cintura</th>
+                    </tr>
+                    <tr>
+                        <td>pp</td>
+                        <td>34/36</td>
+                        <td>96cm</td>
+                        <td>54-62cm</td>
+                    </tr>
+                    <tr>
+                        <td>P</td>
+                        <td>36/38</td>      
+                        <td>100cm</td>
+                        <td>64-72cm</td>
+                    </tr>
+                    <tr>
+                        <td>M</td>
+                        <td>38/40</td>
+                        <td>104cm</td>
+                        <td>72-80</td>
+                    </tr>
+                    <tr>
+                        <td>G</td>
+                        <td>40/42</td>
+                        <td>108cm</td>
+                        <td>80-86</td>
+                    </tr>
+                    <tr>
+                        <td>GG</td>
+                        <td>44-48</td>
+                        <td>112cm</td>
+                        <td>86-92</td>
+                    </tr>
                 </table>
+                <div class="pagamento">
+                    <div class="preco">
+                        <p id="preco_final">R$268,00</p>
+                    </div>
+                    <div class="container_quantidade_e_compra">
+                        <div class="quantidade">
+                            <input type="button" value="-" id="remover_blusa"><input type="number" placeholder="1" min="1" max="10" id="total"><input type="button" value="+" id="add_blusa">
+                        </div>
+                        <div class="campo_comprar">
+                            <button class="comprar">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="frete">
+                    <div class="numero_frete">
+                        <input type="tel" maxlength="9" placeholder="000000-000">
+                    </div>
+                    <div class="calcular">
+                        <button>Calcular</button>
+                    </div>
+                </div>
             </div>
         </section>
 

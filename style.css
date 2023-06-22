@@ -643,28 +643,31 @@ slide.img{
 .imagem_produto{
     height: 600px;
     width: 600px;
-    border: 2px solid black;
 }
 
-.opcao_cor{
+.imagens_produto{
     height: 130px;
     width: 130px;
     align-self: end;
-    border: 2px solid black;
     margin-right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .1s ease-in-out;
+    opacity: 60%;
 }
 
-.opcao_cor img{
+.imagens_produto img{
     height: 120px;
     width: 120px;
 }
 
-.opcao_cor:hover{
+.imagens_produto:hover{
     cursor: pointer;
+    border: 2px solid black;
+    opacity: 100%;
 }
+
 
 
 .opcoes_produto{
@@ -719,8 +722,8 @@ slide.img{
 }
 
 .tamanhos{
-    height: 70px;
-    width: 70px;
+    height: 50px;
+    width: 50px;
     color: black;
     font-weight: 500;   
     font-size: 0.8em;
@@ -733,6 +736,122 @@ slide.img{
 .tamanhos:focus {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.459);
 }
+table{
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+th{
+    background-color: gray;
+}
+table,tr, td,th{
+    border: 1px solid black;
+}
+tr,td{
+    width: 80px;
+    text-align: center;
+    background-color: lightgray;
+}
+
+
+.pagamento{
+    margin-top: 10px;
+    width: 100%;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+}
+
+#total{
+    height:50px;
+    padding:1%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: white;
+    border-left: 0px solid black;
+    border-right: 0px solid black;
+    padding-left:2%;
+    padding-right:2%;
+    outline:none;
+    cursor: pointer;
+    width: 30px;
+    text-align: center;
+}
+
+#add_blusa{
+   width: 30px;
+   height: 50px;
+   border-left: 0;
+   border-bottom: 1px solid black;
+   border-right: 1px solid black;
+   border-top: 1px solid black;
+   font-weight: bolder;
+   background-color: transparent;
+   transition: .2s ease-in-out;
+}
+
+#remover_blusa{
+    width: 30px;
+    height: 50px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 0;
+    border-top: 1px solid black;
+    font-weight: bolder;
+    background-color: transparent;
+    transition: .2s ease-in-out;
+
+}
+
+#remover_blusa:hover,
+#add_blusa:hover{
+    background-color: lightgray;
+}
+
+.container_quantidade_e_compra{
+    display: flex;
+    align-items: center;
+}
+
+
+.quantidade, .preco, .campo_comprar{
+    margin-top: 20px;
+}
+
+.preco, .campo_comprar{
+    display: inline-block;
+}
+
+.campo_comprar{
+    margin-left: 20px;
+}
+
+#preco_final{
+    margin-left: 10px;
+    font-size: 1.2em;
+
+}
+
+.comprar{
+    background-color: #38813c;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid black;
+    font-size: 16px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 180px;
+    height: 50px;
+}
+
+.comprar:hover{
+    background-color: #45a049;
+}
+
+
 
 
 
