@@ -48,7 +48,7 @@ btnAddBlusa.addEventListener('click', () => {
 });
 
 btnRemoverBlusa.addEventListener('click', () => {
-    if(valor >= 1){
+    if(valor > 1){
         valor--;
         qtnBlusas.placeholder = valor;
         if(valor > 1){
