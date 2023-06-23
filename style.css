@@ -673,6 +673,8 @@ slide.img{
     padding: 10px;
 }
 
+
+
 .imagens_produto.opcao1{
     background-image: url(imagens/produtos/CAMISETA\ ASSC\ SPIDER.webp);
     background-size: cover;
@@ -685,8 +687,12 @@ slide.img{
 
 .imagens_produto:hover{
     cursor: pointer;
-    border: 1px solid rgba(0, 0, 0, 0.200);
     opacity: 100%;
+}
+
+.imagens_produto.selecionado{
+    border: 1px solid rgba(0, 0, 0, 0.200);
+    opacity: 1;
 }
 
 .imagem_produto.blusa2{ 
