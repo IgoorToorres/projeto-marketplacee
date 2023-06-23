@@ -34,7 +34,7 @@ const btnAddBlusa = document.querySelector("#add_blusa");
 const btnRemoverBlusa = document.querySelector("#remover_blusa");
 let qtnBlusas = document.querySelector("#total");
 let valorFinal = document.querySelector("#quantidade_final");
-let preco = 238;
+let preco = 210;
 let valor = 1;
 
 
