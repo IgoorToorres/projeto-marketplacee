@@ -689,6 +689,27 @@ slide.img{
     opacity: 100%;
 }
 
+.imagem_produto.blusa2{ 
+    background-image: url(imagens/produtos/CAMISETA\ PALACE\ HESH\ MIT\ TEE.webp);
+    background-size: cover;
+}
+
+.imagens_produto.opcao3{
+    background-image: url(imagens/produtos/CAMISETA\ PALACE\ HESH\ MIT\ TEE.webp);
+    background-size: cover;
+}
+
+.imagens_produto.opcao4{
+    background-image: url(imagens/produtos/CAMISETA\ PALACE\ HESH\ MIT\ TEE\ \(2\).webp);
+    background-size: cover;
+}
+
+
+
+
+
+
+
 
 
 .opcoes_produto{
