@@ -651,7 +651,7 @@ slide.img{
     height: 600px;
     width: 600px;
     border: 1px solid rgba(0, 0, 0, 0.200);;
-    background-image: url(imagens/produtos/CAMISETA\ ASSC\ LOGO\ \(2\).webp);
+    background-image: url(imagens/produtos/CAMISETA\ ASSC\ SPIDER.webp);
     background-size: cover;
 }
 
@@ -674,12 +674,12 @@ slide.img{
 }
 
 .imagens_produto.opcao1{
-    background-image: url(imagens/produtos/camisa_frente.png);
+    background-image: url(imagens/produtos/CAMISETA\ ASSC\ SPIDER.webp);
     background-size: cover;
 }
 
 .imagens_produto.opcao2{
-    background-image: url(imagens/produtos/CAMISETA\ ASSC\ TWISTER\ \(2\).webp);
+    background-image: url(imagens/produtos/CAMISETA\ ASSC\ SPIDER\ \(2\).webp);
     background-size: cover;
 }
 
