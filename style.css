@@ -994,9 +994,58 @@ input[type=number]::-webkit-outer-spin-button {
     }
     .campo_do_produto{
         height: 100%;
+        
+    }
+    .rodape > p{
+        font-size: 0.5em;
+    }
+    .campo_imagem_produto{
+        max-width: 95%;
+        height: 600px;
+        margin: 0 10px;
+    }
+    .imagem_produto{
+        height: 400px;
+    }
+    .opcoes_blusas{
+        height: 150px;
+    }
+    .opcoes_produto{
+        max-width: 95%;
+        margin: 0 10px;
+        height: 1100px;
+    }
+    .container_quantidade_e_compra{
+        flex-wrap: wrap;
+    }
+    .campo_comprar{
+        margin-left: 0;
+    }
+    @media (min-width: 400px){
+        .opcoes_produto{
+            max-width: 95%;
+            margin: 0 10px;
+            height: 900px;
+        }
+    }
+    @media (min-width: 480px){
+        .imagem_produto{
+            height: 500px;
+        }
+        .campo_imagem_produto{
+            max-width: 95%;
+            height: 700px;
+            margin: 0 10px;
+        }
+        .opcoes_produto{
+            max-width: 95%;
+            margin: 0 10px;
+            height: 800px;
+        }
     }
 
 }
+
 
 @media ((min-width: 600px) and (max-width: 800px)){
     .cabecalho{
