@@ -11,6 +11,7 @@
 
 body{
     overflow-x: hidden;
+    height: 100%;
 }
 
 
@@ -639,7 +640,7 @@ slide.img{
 
 
 .campo_imagem_produto{
-    height: 750px;
+    height: 760px;
     width: 600px;
     margin-right: 20px;
     display: flex;
@@ -650,6 +651,8 @@ slide.img{
     height: 600px;
     width: 600px;
     border: 1px solid rgba(0, 0, 0, 0.200);;
+    background-image: url(imagens/produtos/CAMISETA\ ASSC\ LOGO\ \(2\).webp);
+    background-size: cover;
 }
 
 .imagens_produto{
@@ -663,9 +666,21 @@ slide.img{
     opacity: 60%;
 }
 
-.imagens_produto img{
-    height: 120px;
-    width: 120px;
+.opcoes_blusas{
+    display: flex;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.200);
+    padding: 10px;
+}
+
+.imagens_produto.opcao1{
+    background-image: url(imagens/produtos/camisa_frente.png);
+    background-size: cover;
+}
+
+.imagens_produto.opcao2{
+    background-image: url(imagens/produtos/CAMISETA\ ASSC\ TWISTER\ \(2\).webp);
+    background-size: cover;
 }
 
 .imagens_produto:hover{
@@ -677,7 +692,7 @@ slide.img{
 
 
 .opcoes_produto{
-    height: 780px;
+    height: 760px;
     width: 700px;
     border: 1px solid rgba(0, 0, 0, 0.200);
     padding: 50px;
@@ -975,7 +990,10 @@ input[type=number]::-webkit-outer-spin-button {
         transform: scale(-1);
     }
     .catalogo{
-        height: 500vh;
+        height: 100%;
+    }
+    .campo_do_produto{
+        height: 100%;
     }
 
 }
@@ -1041,7 +1059,10 @@ input[type=number]::-webkit-outer-spin-button {
         transform: scale(-1);
     }
     .catalogo{
-        height: 500vh;
+        height: 100%;
+    }
+    .campo_do_produto{
+        height: 100%;
     }
 }
 
@@ -1066,11 +1087,14 @@ input[type=number]::-webkit-outer-spin-button {
         display: none;
     }
     .catalogo{
-        height: 250vh;
+        height: 100%;
     }
     .slider{
         height: 700px;
     } 
+    .campo_do_produto{
+        height: 100%;
+    }
 }
 
 @media ((min-width: 1025px) and (max-width: 1198px)){
@@ -1091,13 +1115,16 @@ input[type=number]::-webkit-outer-spin-button {
         display: none;
     }
     .catalogo{
-        height: 250vh;
+        height: 100%;
     }
     .slider{
         height: 700px;
     }
     .nav_list > li{
         margin-left: 10px;
+    }
+    .campo_do_produto{
+        height: 100%;
     }
 }
 
@@ -1119,7 +1146,7 @@ input[type=number]::-webkit-outer-spin-button {
         display: none;
     }
     .catalogo{
-        height: 200vh;
+        height: 100%;
     }
     .slider{
         height: 700px;
@@ -1127,11 +1154,17 @@ input[type=number]::-webkit-outer-spin-button {
     .nav_list > li{
         margin-left: 10px;
     }
+    .campo_do_produto{
+        height: 100%;
+    }
 }
 
 @media ((min-width: 1301px) and (max-width: 1600px)){
     .catalogo{
-        height: 200vh;
+        height: 100%;
+    }
+    .campo_do_produto{
+        height: 100%;
     }
 }
 
