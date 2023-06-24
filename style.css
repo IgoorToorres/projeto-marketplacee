@@ -1066,6 +1066,10 @@ input[type=number]::-webkit-outer-spin-button {
     .campo_comprar{
         margin-left: 0;
     }
+    #preco_final{
+        font-size: 1.0em;
+    }
+
     @media (min-width: 400px){
         .opcoes_produto{
             max-width: 95%;
