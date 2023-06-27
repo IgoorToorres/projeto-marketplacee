@@ -964,6 +964,51 @@ input[type=number]::-webkit-outer-spin-button {
     cursor: pointer;
 }
 
+.container_carrinho{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.conteudo_carrinho{
+    width: 80vw;
+    min-height: 960px;
+    background-color: #fff;
+    margin-top: 150px;
+    box-shadow: 0 0 50px  rgba(0, 0, 0, 0.200);
+}
+
+.produtos_carrinho{
+    min-height: 60%;
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid rgba(0, 0, 0, 0.200);
+}
+
+.cabecalho_carrinho{
+    height: 130px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}.cabecalho_carrinho h2{
+    font-size: 3em;
+}
+
+.item_carrinho{
+    height: 150px;
+    max-width: 80%;
+    background-color: red;
+    margin: 20px auto;
+}
+
+.resultado_carrinho{
+    height: 200px;
+    width: 90%;
+    background-color: gray;
+    margin: 10px auto;
+}
+
 
 
 
